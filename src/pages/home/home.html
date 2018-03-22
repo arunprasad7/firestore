@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Firestore POC
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+<ion-list>
+  <ion-list-header>
+    Products
+  </ion-list-header>
+  <ion-item  *ngFor="let product of products | async">
+    <p>{{ product.name }}</p>
+  </ion-item>
+</ion-list>
+</ion-content>
